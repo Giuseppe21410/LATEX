@@ -1,0 +1,25 @@
+% Para encontrar información de referencia, puedes utilizar el software "Mendeley Desktop" o "Google Academic".%
+
+% Una vez obtenida las referencias en código "Bibtex", debemos crear un archivo ".bib" para almacenar nuestras referencias.%
+
+% Existen difentes comándos "Bibtex", que puede rellenar a tu gusto. Todas ellas se encuentran en tus archivos. Un ejemplo de ello es el archivo "ifacconf.bib"
+
+\documentclass{article}
+\usepackage{graphicx} 
+\usepackage{apacite}
+\bibliographystyle{apacite}
+\usepackage{natbib}
+
+\title{BIBLIOGRAFÍAS}
+\author{Giuseppe Fuentes Moreno}
+
+\begin{document}
+\section{Introducción}
+%Para citar referencias utilizamos el código "\cite" para que el nombre de los autores aparezca en el texto o "\citep" para  dar una idea del trabajo de los autores consultados y no hemos mencionado en el texto:
+El cemento fue descubierto en ... ,\citep{cemento}
+
+Según \cite{cemento}...
+%Para detallar la bibliografía utilizamos el código "bibliography":
+\bibliography{referencias} % En donde detallamos el archivo referencias.bib.
+
+\end{document}

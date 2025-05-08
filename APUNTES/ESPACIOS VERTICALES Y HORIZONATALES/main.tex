@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{ESPACIOS VERTICALES Y HORIZONATALES}
+\author{Giuseppe Fuentes Moreno}
+\date{September 2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+% Espacios horizontales:
+hola hola\\
+hola  hola\\% Dos saltos, se interpretan como un salto.
+hola                                    hola\\% Muchos saltos se interpretan como un salto.
+hola \, hola \\ % Crea un doble espacio.
+hola \hspace{3cm} hola\\ % Salto de línea de 3cm.
+\hspace{3cm} hola\\ % No hay salto de línea antes de la palabra.
+\hspace*{3cm} hola\\% El asterisco permite el salto de línea antes de la palabra.
+hola hola hola \hfill hola hola hola\\ % El comando "\hfill" invierte el sentido de la escritura.
+
+% Espacios verticales:
+\vspace{2cm}% Espacio vertical.
+adios \vspace{2cm} adios\\ % No comprende el espacio vertical entre ambas a palabras. 
+% Para hacer lo anterior: 
+bye \vspace{1cm}\\
+bye
+
+\end{document}

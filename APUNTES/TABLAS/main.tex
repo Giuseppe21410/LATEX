@@ -1,0 +1,35 @@
+% Para copiar le código de una tabla de excel, debes seleccionar la tabla, ir a complementos y "convertir a Latex".%
+
+\documentclass{article}
+\usepackage{graphicx} 
+
+\title{TABLAS DE EXCEL}
+\author{Giuseppe Fuentes Moreno}
+\date{September 2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Tabla de datos}
+
+Los datos que se presentan en \ref{tab:addlabel}...
+
+%Pegas el código y modificas el "label" de la tabla.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Add caption}
+    \begin{tabular}{crr}
+    \rowcolor[rgb]{ 0,  .69,  .941} \textbf{Datos} & \multicolumn{1}{c}{\textbf{(V)(cm3)/(mm3)}} & \multicolumn{1}{c}{\textbf{(m)(g)}} \\
+    1     & 8,177083333 & 20,69921 \\
+    2     & 8285,50 & 20,69921 \\
+    \end{tabular}%
+  \label{tab:addlabel}%
+\end{table}%
+
+% También existen plataformas en línea que crear directamente el código "Latex" de la tabla a medida que está siendo creada.
+% https://www.tablesgenerator.com
+
+
+\end{document}
