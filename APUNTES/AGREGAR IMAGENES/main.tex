@@ -1,21 +1,21 @@
 \documentclass{article}
 \usepackage{graphicx} % Requerido para insertar imagénes. %
 
-%Recuerda subir la imagen antes de iniciar el proceso.%
+
 \begin{document}
 %Para añadir imagenes: 
-\begin{figure}[h] % Con corchetes, podemos añadr opciones de comando que nos permiten determinar la posición de la imagen, por ejemplo "[h](here)" muestra la imagen en el mismo lugar donde se inserta, o "[t](top), muestra la imagen en la parte superior de la página. Mas información en la carpeta "Latex".
+\begin{figure}[h] % Con corchetes, podemos añadr opciones de comando que nos permiten determinar la posición de la imagen, por ejemplo "[h](here)" muestra la imagen en el mismo lugar donde se inserta, o "[t](top), muestra la imagen en la parte superior de la página...
     \begin{center} % Entorno para centrar la imagen.
         \centering
-        % El comando "width" hace referencia al tamaño de la imagen.%
-        \includegraphics[width=0.8\linewidth]{Donald_Trump_official_portrait.jpg}
-       % El comando "caption" permite complementar una frase en el apartado inferior de la imagen.%
+        % El comando "width" indica el tamaño del ancho de la imagen.%
+        \includegraphics[width=0.9\linewidth]{Donald_Trump_official_portrait.jpg}
+       % El comando "caption" añade una leyenda en la parte inferior de la imagen.%
         \caption{Presidente de Estados Unidos}
-        % El comando "label" es el combre con el cual la imagen será recordada en los archivos (referencia cruzada).%
+        % El comando "label" es el nombre con el cual la imagen será recordada en los archivos (referencia cruzada).%
         \label{fig:Trump}
     \end{center}
 \end{figure}
-% Con el comando "ref" hacemos referencia a la iamgen utilizando su label.%
+% Con el comando "ref" hacemos referencia a la imagen utilizando su label.%
 El presidente de Estados unidos Donald Trump \ref{fig:Trump}....
 
 \end{document}
